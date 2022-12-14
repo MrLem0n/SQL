@@ -1,11 +1,11 @@
--- Crear database ()--
+-- Crear database (Products,Clientes,Proveedores,Pedido)--
 
-CREATE DATABASE Loas_shop_Lisandro_Martin;
-use Loas_shop_Lisandro_Martin;
+CREATE DATABASE loas_shop;
+use loas_shop;
 
 -- Tabla Productos--
 
-CREATE TABLE Products (
+CREATE TABLE products (
 	prod_id  INT  auto_increment primary key not null,
     prod_code INT not null,
     prod_name VARCHAR(60) not null,
@@ -15,10 +15,10 @@ CREATE TABLE Products (
 
 -- Tabla Clientes--
 
-CREATE TABLE Clients (
+CREATE TABLE clients (
     client_id  INT  auto_increment primary key not null,
     client_name VARCHAR(30) not null,
-    client_DNI INT not null,
+    client_dni INT not null,
     client_email VARCHAR(50) not null,
     client_address VARCHAR(50) not null,
     client_phone INT not null,
@@ -26,18 +26,18 @@ CREATE TABLE Clients (
 );
 
 -- Tabla Proveedores --
-CREATE TABLE Providers (
+CREATE TABLE providers (
     prov_id  INT  auto_increment primary key not null,
     prov_name VARCHAR(30) not null,
     prov_email VARCHAR(50) not null,
     prov_address VARCHAR(50) not null,
     prov_phone INT not null
     
-);
+) ;
 
 -- Tabla Pedidos --
 
-CREATE TABLE Orders(
+CREATE TABLE orders(
     order_id  INT  auto_increment primary key not null,
     order_note VARCHAR(100) not null,
     prod_id INT  not null,
@@ -46,7 +46,5 @@ CREATE TABLE Orders(
     client_id INT  not null,
     client_name VARCHAR(30)  not null,
     foreign key (prod_id) references products(prod_id),
-    foreign key (prod_name) references products(prod_name),
-    foreign key (client_id) references clients(client_id),
-    foreign key (client_name) references clients(client_name)
+    foreign key (client_id) references clients(client_id)
 );
