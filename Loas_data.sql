@@ -64,8 +64,8 @@ VALUES(
     "Antonio Reyna",
     "luciana.leiva@hotmail.com",
     "Cl.Ximena Arroyo #04285",
-    51 149 7512
-)
+    511497512
+);
 
 INSERT into providers
 VALUES(
@@ -74,7 +74,7 @@ VALUES(
     "malena68@mateo.com",
     "Av. Adrián Muñiz # 6050",
     1350065
-)
+);
 
 INSERT into providers
 VALUES(
@@ -83,4 +83,4 @@ VALUES(
     "montenegro.alexander@gmail.com",
     "Jr.Ivan Meléndez #60269",
     511023404
-)
+);
