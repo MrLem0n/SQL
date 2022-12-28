@@ -84,3 +84,30 @@ VALUES(
     "Jr.Ivan Meléndez #60269",
     511023404
 );
+INSERT into providers
+VALUES(
+    4,
+    "Antonio Rey",
+    "luciana@hotmail.com",
+    "Cl.Ximena Arroyo #4285",
+    521497512
+);
+
+INSERT into providers
+VALUES(
+    5,
+    "Andre Rivera",
+    "malena69@mateo.com",
+    "Av. Adrián Muñiz #605",
+    1250065
+);
+
+INSERT into providers
+VALUES(
+    6,
+    "Gerónimo Valadez",
+    "montenegro.ger@gmail.com",
+    "Jr.Ivan Meléndez #6069",
+    531023404
+);
+
