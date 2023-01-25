@@ -48,3 +48,23 @@ CREATE TABLE orders(
     foreign key (prod_id) references products(prod_id),
     foreign key (client_id) references clients(client_id)
 );
+
+----------- LOGS ----------------------------------------
+
+CREATE TABLE log_clientes (
+logc_id INT,
+usuario VArchar(20),
+fecha DATE,
+hora TIME,
+operacion VARCHAR(60)
+);
+
+
+DROP Table log_productos;
+CREATE TABLE log_productos (
+logp_id INT Primary Key AUTO_INCREMENT,
+prod_eliminado VArchar(20),
+fecha_borrado TIMESTAMP DEFAULT NOW(),
+operacion VARCHAR(60)
+
+);
