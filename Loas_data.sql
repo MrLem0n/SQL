@@ -1,3 +1,4 @@
+-------------Clientes----------
 INSERT INTO clients
 VALUES(
     1,
@@ -30,7 +31,7 @@ VALUES(
     34658667082,
     "honor shard pouch(S)"
 );
-
+----------------Productos------------------
 INSERT into products
 VALUES(
     1,
@@ -58,6 +59,89 @@ VALUES(
     "Shards"
 );
 
+INSERT into products
+VALUES(
+    4,
+    21543,
+    "harmony shard pouch(S)",
+    42,
+    "Shards"
+);
+
+INSERT into products
+VALUES(
+    5,
+    21544,
+    "harmony shard pouch(M)",
+    85,
+    "Shards"
+);
+
+INSERT into products
+VALUES(
+    6,
+    21545,
+    "harmony shard pouch(L)",
+    123,
+    "Shards"
+);
+
+INSERT into products
+VALUES(
+    7,
+    21654,
+    "hp potion",
+    56,
+    "potions"
+);
+
+INSERT into products
+VALUES(
+    8,
+    21655,
+    "major hp potion",
+    99,
+    "potions"
+);
+
+INSERT into products
+VALUES(
+    9,
+    21656,
+    "elemental hp potion",
+    188,
+    "potions"
+);
+
+INSERT into products
+VALUES(
+    10,
+    31654,
+    "Solar grace",
+    33,
+    "honing"
+);
+
+INSERT into products
+VALUES(
+    11,
+    31655,
+    "Solar blessing",
+    66,
+    "honing"
+);
+
+
+INSERT into products
+VALUES(
+    12,
+    31656,
+    "Solar protection",
+    120,
+    "honing"
+);
+
+--------Proveedores--------------------------------
 INSERT into providers
 VALUES(
     1,
